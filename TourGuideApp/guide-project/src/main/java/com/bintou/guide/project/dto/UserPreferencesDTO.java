@@ -12,7 +12,7 @@ public class UserPreferencesDTO {
     private int numberOfAdults = 0;
     private int numberOfChildren = 0;
 
-    public UserPreferencesDTO() {
+    /*public UserPreferencesDTO() {
     }
 
     public UserPreferencesDTO(String userName, Money lowerPricePoint, Money highPricePoint, int tripDuration, int ticketQuantity, int numberOfAdults, int numberOfChildren) {
@@ -23,7 +23,7 @@ public class UserPreferencesDTO {
         this.ticketQuantity = ticketQuantity;
         this.numberOfAdults = numberOfAdults;
         this.numberOfChildren = numberOfChildren;
-    }
+    }*/
 
     public String getUserName() {
         return userName;

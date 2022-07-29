@@ -14,11 +14,11 @@ import java.util.UUID;
 public interface TripPricerProximity {
     @GetMapping("/trip/{apiKey}/{attractionId}/{adults}/{children}/{nightsStay}/{rewardsPoints}")
     public List<Provider> getPrice(
-                                     @PathVariable("keyApi") String apiKey,
+                                     @PathVariable("apiKey") String apiKey,
                                      @PathVariable("attractionId") UUID attractionId,
                                      @PathVariable("adults") int adults,
-                                     @PathVariable("kids") int children,
-                                     @PathVariable("daysOfStaying") int nightsStay,
-                                     @PathVariable("numberOfRewardsPoints") int rewardsPoints
+                                     @PathVariable("children") int children,
+                                     @PathVariable("nightsStay") int nightsStay,
+                                     @PathVariable("rewardsPoints") int rewardsPoints
                                    );
 }
