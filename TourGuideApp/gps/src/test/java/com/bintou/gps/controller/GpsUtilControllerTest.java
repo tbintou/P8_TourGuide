@@ -26,9 +26,18 @@ public class GpsUtilControllerTest {
 
     @Test
     public void getUserLocationTest() {
+        /* //UUID uuid = UUID.randomUUID();
+        String id ="";
+        String idString = UUID.nameUUIDFromBytes(String.valueOf(id).getBytes()).toString();
+        UUID uuid = UUID.fromString(idString);
+        VisitedLocation visitedLocation = gpsUtilController.getUserLocation(uuid);
+        Double x = Double.valueOf(String.valueOf(visitedLocation));
+        System.out.println(uuid); // "e572901c-3c11-4f3c-85b1-c8144c986e45"
+        Assertions.assertNotNull(x); */
+
         UUID uuid = UUID.randomUUID();
         VisitedLocation visitedLocation = gpsUtilController.getUserLocation(uuid);
         System.out.println(uuid); // "e572901c-3c11-4f3c-85b1-c8144c986e45"
-        Assertions.assertNotNull(visitedLocation);
+        Assertions.assertNotNull(uuid);
     }
 }
